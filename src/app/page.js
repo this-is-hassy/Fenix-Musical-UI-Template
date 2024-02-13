@@ -1,113 +1,83 @@
 import Image from "next/image";
+import "remixicon/fonts/remixicon.css";
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <main className="w-full h-screen max-sm:h-full max-sm:w-full">
+        <div className="h-3/5 max-sm:h-[36rem] max-sm:w-full w-full relative">
+          <Image
+            src="/view.jpg"
+            width={2000}
+            height={2000}
+            className="opacity-80 z-10 w-full h-full bg-cover relative"
+          ></Image>
+          <div className="absolute top-10 w-full px-20 text-white z-20">
+            <div className="flex justify-between">
+              <i class="ri-bubble-chart-fill flex justify-center items-center top-3 left-3 w-10 h-10 bg-orange-500 rounded-full"></i>
+              <div className="absolute top-2 left-32">Fenix</div>
+              <div className="flex items-center justify-between gap-8 font-sans">
+                <i class="ri-search-fill"></i>
+                <i class="ri-menu-5-fill"></i>
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute top-64 max-sm:top-48 w-full px-20 text-white z-20">
+            <div className="flex justify-between max-sm:flex-col max-sm:items-start">
+              <div className="text-5xl font-extrabold">Noise.</div>
+              <div className="flex items-center max-sm:items-start justify-between max-sm:flex-col gap-8 font-sans">
+                <div className="text-base font-semibold ">
+                  Looking for my next roll <br /> kill for the headlight
+                </div>
+                <div className="text-base font-semibold ">
+                  I understand my name is <br /> only for conversation
+                </div>
+                <div className="text-black">
+                  <i class="ri-instagram-line text-xl font-semibold pr-2 max-sm:pr-4  hover:text-white"></i>
+                  <i class="ri-twitter-x-line text-xl font-semibold pr-2 max-sm:pr-4 hover:text-white"></i>
+                  <i class="ri-facebook-fill text-xl font-semibold hover:text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div className="flex h-2/5 w-full max-sm:h-full max-sm:w-full max-sm:flex-col  ">
+          <div className="flex justify-center items-center bg-zinc-100 h-full w-1/4 max-sm:h-[25rem] max-sm:w-full text-2xl font-extrabold text-zinc-950 font-sans border-t-8 border-r-8 border-zinc-600 ">
+            current.. <br /> Performance as a noise
+          </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          <div className="h-full w-1/4 max-sm:h-[25rem] max-sm:w-full relative">
+            <Image
+              src="/botSec.jpg"
+              width={500}
+              height={500}
+              className="h-full w-full "
+            ></Image>
+            <i class="ri-play-circle-line text-7xl font-thin text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></i>
+          </div>
+          <div className="h-full w-1/4 max-sm:h-[25rem] max-sm:w-full">
+            <div className="h-full w-full">
+              <div className="h-1/2 text-white text-base bg-gradient-to-tl from-zinc-900 to-zinc-800 px-5 py-5 max-sm:px-10 max-sm:py-14 ">
+                Art <br />
+                Taschen: Dali <br />
+                The paintings and bio,
+              </div>
+              <Image
+                src="/botThird.jpg"
+                width={700}
+                height={500}
+                className="h-1/2"
+              ></Image>
+            </div>
+          </div>
+          <div className=" max-sm:h-[25rem] max-sm:w-full h-full w-1/4 bg-zinc-900 max-sm:bg-zinc-950 text-lg max-sm:text-2xl text-zinc-500 max-sm:text-zinc-400 font-sans py-10 flex justify-center max-sm:justify-center max-sm:items-center ">
+            Flying allegedly comments on Gaslamp Killer. <br />
+            Tracing King krule's devotio to the colour blue.
+          </div>
+        </div>
+      </main>
+    </>
   );
 }
