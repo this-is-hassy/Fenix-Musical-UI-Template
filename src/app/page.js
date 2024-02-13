@@ -74,7 +74,7 @@ export default function Home() {
           </div>
           <div className=" max-sm:h-[25rem] max-sm:w-full h-full w-1/4 bg-zinc-900 max-sm:bg-zinc-950 text-lg max-sm:text-2xl text-zinc-500 max-sm:text-zinc-400 font-sans py-10 flex justify-center max-sm:justify-center max-sm:items-center ">
             Flying allegedly comments on Gaslamp Killer. <br />
-                  {Tracing King krule`&apos;`s devotio to the colour blue.} 
+                  Tracing King krule's devotio to the colour blue. 
           </div>
         </div>
       </main>
